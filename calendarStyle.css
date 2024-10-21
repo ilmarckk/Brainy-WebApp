@@ -1,0 +1,186 @@
+/* Impostazioni generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+body {
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333; /* Colore del testo principale */
+}
+/* Header */
+header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.profile-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: white;
+}
+
+/* Calendar Container */
+#calendar-container {
+    background-color: #ffffff; /* Sfondo bianco per il contenitore del calendario */
+    border-radius: 12px; /* Bordi arrotondati */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera per effetto di sollevamento */
+    max-width: 100%;
+    margin: 0 auto;
+    color: #333; /* Colore del testo */
+}
+
+/* Current Date */
+#current-date {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Event List */
+#event-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Spazio tra gli eventi */
+    margin-bottom: 20px;
+}
+
+.event {
+    background-color: #e1e1e6; /* Colore di sfondo tenue per gli eventi */
+    border-radius: 12px;
+    padding: 8px 15px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+.eventi{
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* Navigation */
+#year-navigation, #month-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f5;
+    border-color: #b0b0b0;
+}
+
+/* Calendar Table */
+#calendar table {
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed; /* Assicura che le celle occupino la stessa larghezza */
+}
+
+#calendar th, #calendar td {
+    text-align: center;
+    padding: 10px;
+}
+
+#calendar th {
+    color: black;
+    font-weight: normal;
+}
+
+#calendar td {
+    background-color: #ffffff; /* Colore di sfondo per le celle */
+    border: 1px solid #e0e0e0; /* Linea sottile grigia chiara */
+    border-radius: 8px;
+}
+
+#calendar td:hover {
+    background-color: #f9f9f9; /* Colore di sfondo per hover */
+}
+/* homeStyle.css */
+.navbar {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    align-items: center; /* Allinea verticalmente gli elementi */
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column; /* Allinea icona e testo in colonna */
+    align-items: center; /* Allinea icona e testo al centro */
+    font-weight: bold;
+}
+
+.navbar-icon {
+    width: 30px; /* Dimensione dell'icona */
+    height: 30px; /* Dimensione dell'icona */
+    margin-bottom: 5px; /* Spazio tra icona e testo */
+}
+
+.navbar span {
+    font-size: 12px; /* Dimensione del testo */
+}
+
+.navbar a.active {
+    color: #2d2d3e;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,130 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    margin-top: 80px;
+}
+
+header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #fff;
+    background-color: #2d3142;
+}
+
+header h1 {
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: 700;
+}
+.back-arrow {
+    width: 45px;
+}
+main {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-info {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2d3142;
+    text-transform: uppercase;
+}
+
+.support-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forgot-password,
+.message-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.forgot-password {
+    text-align: center;
+}
+.forgot-password a {
+    margin: 0;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+}
+
+.message-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-form label {
+    font-size: 16px;
+    color: #2d3142;
+    text-align: center;
+}
+
+.message-form textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    height: 100px;
+    font-size: 14px;
+}
+
+.message-form button {
+    padding: 10px;
+    background-color: #2d3142;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.message-form button:hover {
+    background-color: #4b526d;
+}
+
+.credits {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    margin-top: auto;
+}

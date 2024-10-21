@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrazione Esame</title>
+        <link rel="stylesheet" href="registrationStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="icon" href="icon_512.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QXKXBSM8B8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QXKXBSM8B8');
+</script>
+    </head>
+    <body>
+        <header>
+            <h1>BRAINY</h1>
+            <a href="profile.php" class="profile-icon"><img src="profile_icon.png" alt="Profile Icon"></a>
+        </header>
+
+        <div id="container">
+            <h1 class="title">Interrogazione di <br>Matematica</h1>
+            <div id="feedback-message"></div> <!-- Area per i messaggi di feedback -->
+            <div id="exam-list">
+                <!-- Esempio di riquadro esame -->
+                <div class="exam-item">
+                    <div class="exam-info">
+                        <span class="exam-name">Esame di Matematica</span>
+                        <span class="exam-time">Orario: 10:00</span>
+                    </div>
+                    <div class="exam-bottom">
+                        <div class="exam-availability">
+                            <span>Posti</span>
+                            <span class="availability-number">10</span>
+                        </div>
+                        <button class="register-button" data-exam-id="1">Registrati</button>
+                    </div>
+                </div>
+                
+                
+                <!-- Aggiungi altri riquadri esami qui -->
+            </div>
+        </div>
+    
+        <nav class="navbar">
+            <a href="homePage.php">
+                <img src="home.png" alt="Home" class="navbar-icon">
+                <span>Home</span>
+            </a>
+            <a href="calendar.php">
+                <img src="calendar.png" alt="Calendario" class="navbar-icon">
+                <span>Calendario</span>
+            </a>
+            <a href="registrationExam.html">
+                <img src="board.png" alt="Bacheca" class="navbar-icon">
+                <span style="font-size: 15px;">Prenota</span>
+            </a>
+        </nav>
+        <script src="registrationScript.js"></script>
+    </body>
+</html>

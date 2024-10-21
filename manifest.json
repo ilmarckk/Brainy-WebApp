@@ -1,0 +1,30 @@
+{
+  "name": "Brainy",
+  "short_name": "Brainy",
+  "description": "Brainy - The best school based system",
+  "start_url": "index.php",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon_192.png",
+      "sizes": "192x192",
+      "type": "icon_192.png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_512.png",
+      "sizes": "512x512",
+      "type": "icon_512.png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_1024.png",
+      "sizes": "1024x1024",
+      "type": "1024.png",
+      "purpose": "any maskable"
+    }
+  ]
+}
